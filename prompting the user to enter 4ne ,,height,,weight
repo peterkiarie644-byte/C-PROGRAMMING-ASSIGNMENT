@@ -1,0 +1,28 @@
+/*
+Name:Peter kiarie mwaura
+Reg No.CT100/G/26128/25
+Description:To prompt the to enter his phone number
+*/
+
+
+#include <stdio.h>
+
+int main()
+{
+//Declaration of the variable to be entered
+int number;
+float weight;
+float height;
+// Prompting the user to enter a number
+printf("Enter your number:\n");
+scanf("%d", &number);
+
+printf;("enter your weight:\n");
+scanf("%f", &weight);
+
+printf("enter your height:\n");
+scanf("%f",&height);
+return 0;
+}
+    
+
