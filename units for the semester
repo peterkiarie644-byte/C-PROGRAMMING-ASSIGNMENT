@@ -1,0 +1,18 @@
+/*
+Name:Peter kiarie mwaura
+Reg No: CT100/G/26128/25
+Description:assignmemt on units for the units for the semester
+*/
+#include<stdio.h>
+
+int main(){
+    printf("Analogue electronics\n");
+    printf("Computer system and organisation\n");
+    printf("Fundementals of ict\n");
+    printf("Essentials of accounting\n");
+    printf("Introduction to computer application\n");
+    printf("Communicatin skill\n");
+    printf("Mathematics for science\n");
+    printf("Introductin to programming and algorithms\n");
+    return 0;
+}
