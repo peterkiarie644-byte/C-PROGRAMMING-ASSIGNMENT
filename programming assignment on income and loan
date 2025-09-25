@@ -1,0 +1,27 @@
+Name:Peter kiarie mwaura
+Reg No:CT100/G/26128/25
+Description:Prompting the user to enter age and  income to see if he or she qualifies to get a loan
+*/
+#include <stdio.h>
+
+int main(){
+    //Valiable declaration
+    int age;
+    float income;
+    
+// Prompting the user to enter their age and income
+printf("Enter your age:");
+scanf("%df", &age);
+
+printf("Enter your annual income sh:");
+scanf("%f", $ income);
+
+// Checking if the customer qualifies fo a loan 
+if (age>=21$$ income>=21000){
+    printf("Congraturatios you qualify for a loan.\n");
+} else{
+    printf("Unfortunatery, we aer unable to offer you a loan at this time.\n");
+
+
+    return 0;
+}
