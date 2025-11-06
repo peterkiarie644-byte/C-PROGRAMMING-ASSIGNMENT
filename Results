@@ -1,0 +1,34 @@
+"/
+name:peter kiarie mwaura 
+reg:CT100/G/26128/25
+Description: results 
+/*
+#include <stdlib.h>
+
+// Step i: Define the structure
+struct Student {
+    char name[50];
+    char regNo[20];
+    float totalMarks;
+};
+
+int main() {
+    FILE *file_ptr;
+    struct Student s;
+
+    // Step ii: Open the binary file for reading
+    file_ptr = fopen("results.dat", "rb"); // rb = read binary
+
+    if (file_ptr == NULL) {
+        printf("Error: Could not open file 'results.dat'.\n");
+        exit(1);
+    }
+
+    printf("Student Examination Results\n");
+    printf("----------------------------\n");
+
+    // Step iii: Read and display each record
+    while (fread(&s, sizeof(struct Student), 1, file_ptr)) {
+        printf("Name: %s\n", s.name);
+        printf("Registration No: %s\n", s.regNo);
+        printf("Total Marks: %.
