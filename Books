@@ -1,0 +1,65 @@
+/*
+Name:peter kiarie mwaura 
+Reg:CT100/G/26128/25
+#include <stdlib.h>
+Description:books */
+
+int main() {
+    FILE *file_ptr;
+    char title[100];
+
+    // Open file in append mode so existing records are not deleted
+    file_ptr = fopen("borrowed_books.txt", "a");
+    
+    // Check if file opened successfully
+    if (file_ptr == NULL) {
+        printf("Error! Could not open file.\n");
+        exit(1);
+    }
+
+    // Ask user for book title
+    printf("Enter the title of the borrowed book: ");
+    fgets(title, sizeof(title), stdin); // read input including spaces
+
+    // Write the title to the file
+    fprintf(file_ptr, "%s", title);
+
+    // Close the file
+    fclose(file_ptr);
+
+    // Display confirmation message
+    printf("Book title successfully stored in borrowed_books.txt\n");
+
+    return 0;
+}
+#include <stdio.h>
+
+
+int main() {
+    FILE *file_ptr;
+    char title[100];
+
+    // Open file in append mode so existing records are not deleted
+    file_ptr = fopen("borrowed_books.txt", "a");
+    
+    // Check if file opened successfully
+    if (file_ptr == NULL) {
+        printf("Error! Could not open file.\n");
+        exit(1);
+    }
+
+    // Ask user for book title
+    printf("Enter the title of the borrowed book: ");
+    fgets(title, sizeof(title), stdin); // read input including spaces
+
+    // Write the title to the file
+    fprintf(file_ptr, "%s", title);
+
+    // Close the file
+    fclose(file_ptr);
+
+    // Display confirmation message
+    printf("Book title successfully stored in borrowed_books.txt\n");
+
+    return 0;
+}
