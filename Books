@@ -2,7 +2,8 @@
 Name:peter kiarie mwaura 
 Reg:CT100/G/26128/25
 #include <stdlib.h>
-Description:books */
+Description:books 
+*/
 
 int main() {
     FILE *file_ptr;
