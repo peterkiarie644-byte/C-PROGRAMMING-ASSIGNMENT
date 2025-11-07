@@ -1,0 +1,33 @@
+*/
+Name:Peter kiarie mwaura 
+Reg no :CT100/G/26128/25
+/*
+#include <stdio.h
+
+int main() {
+    FILE *file_ptr;
+    char filename[] = "sales.txt";
+    float amount, total_sales = 0.0;
+
+    // Open file for reading
+    file_ptr = fopen(filename, "r");
+
+    // Check if file opened successfully
+    if (file_ptr == NULL) {
+        printf("Error: Could not open file %s\n", filename);
+        exit(1);
+    }
+
+    // Read all transaction amounts and calculate total
+    while (fscanf(file_ptr, "%f", &amount) == 1) {
+        total_sales += amount;
+    }
+
+    // Close the file
+    fclose(file_ptr);
+
+    // Display total sales for the day
+    printf("Total sales for the day: %.2f\n", total_sales);
+
+    return 0;
+}
