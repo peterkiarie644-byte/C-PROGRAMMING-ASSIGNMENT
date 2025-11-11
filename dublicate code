@@ -1,0 +1,38 @@
+/*
+Name:Peter kiarie mwaura
+Reg:CT100/G/26128/25
+*/
+#include <stdio.h>
+
+int main() {
+    float attendance, average;
+
+    // Get user input
+    printf("Enter attendance percentage: ");
+    scanf("%f", &attendance);
+#include <stdio.h>
+
+int main() {
+    float attendance, average;
+
+    // Get user input
+    printf("Enter attendance percentage: ");
+    scanf("%f", &attendance);
+
+    printf("Enter average marks: ");
+    scanf("%f", &average);
+
+    // Check eligibility
+    if (attendance >= 75 && average >= 40) {
+        printf("Eligible for final exams.\n");
+    } else {
+        printf("Not eligible.\n");
+
+    printf("Enter average marks: ");
+    scanf("%f", &average);
+
+    // Check eligibility
+    if (attendance >= 75 && average >= 40) {
+        printf("Eligible for final exams.\n");
+    } else {
+        printf("Not eligible.\n");
